@@ -50,3 +50,8 @@ Feature: Test in Cucumber
         And Click to Register on dla naczyciela
         And Page is closed
 
+
+        Scenario: Test
+          Given Page is loaded with "https://dlanauczyciela.pl/"
+          Then Login on Page dlanauczyciela
+          And Page is closed
