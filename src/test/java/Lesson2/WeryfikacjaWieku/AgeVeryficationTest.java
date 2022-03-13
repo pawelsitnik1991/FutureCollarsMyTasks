@@ -11,19 +11,19 @@ public class AgeVeryficationTest {
     }
 
     @Test
-    public void shoudldRetrunTrueWhenAgeIsMoreThen18() {
+    public void shouldRetrunTrueWhenAgeIsMoreThen18() {
         int age = 19;
         Assertions.assertTrue(ageVeryfication.verficationAge(age));
     }
 
     @Test
-    public void shoudldRetrunTrueWhenAgeIsEqualTo18() {
+    public void shouldRetrunTrueWhenAgeIsEqualTo18() {
         int age = 18;
         Assertions.assertTrue(ageVeryfication.verficationAge(age));
     }
 
     @Test
-    public void shoudldRetrunTrueWhenAgeIsLessThen18() {
+    public void shouldRetrunFalseWhenAgeIsLessThen18() {
         int age = 17;
         Assertions.assertFalse(ageVeryfication.verficationAge(age));
     }
