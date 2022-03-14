@@ -4,20 +4,12 @@ public class Cinema {
 
     private int numberOfSeat;
     private int rowNumber;
-    private static boolean stateIsFree = true;
+    private boolean stateIsFree;
 
-    public boolean isFree() {
-        if (stateIsFree) {
-            System.out.println("Miejsce jest wolne");
-        } else {
-            System.out.println("Miejsce jest zajęte");
-        }
-        return stateIsFree = false;
+    public boolean isStateIsFree() {
+        return stateIsFree;
     }
 
-    public static void setStateIsFree(boolean changeCondition) {
-        Cinema.stateIsFree = changeCondition;
-    }
 }
 
 
