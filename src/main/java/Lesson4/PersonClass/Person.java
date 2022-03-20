@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Person {
 
-    String firstName;
-    String lastName;
-    double growth;
-    int age;
+    private String firstName;
+    private String lastName;
+    private double growth;
+    private int age;
 
     @Override
     public boolean equals(Object o) {
