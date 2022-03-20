@@ -6,8 +6,6 @@ public class BillCalculator {
         return valueOfTheBill + paymentForService;
     }
 
-    ;
-
     double calculate(double valueOfTheBill, float paymentForService, double discount) {
         if (discount > 0) {
             valueOfTheBill += valueOfTheBill * discount;
@@ -15,12 +13,9 @@ public class BillCalculator {
         return valueOfTheBill + paymentForService;
     }
 
-    ;
-
     double calculate(double valueOfTheBill, float paymentForService, short takeOutPackagingFee) {
         return valueOfTheBill + paymentForService + takeOutPackagingFee;
     }
 
-    ;
 
 }
