@@ -2,8 +2,8 @@ package Lesson4.TriangleClass;
 
 public class Triangle {
 
-    double width;
-    double height;
+    private double width;
+    private double height;
 
     @Override
     public String toString() {
