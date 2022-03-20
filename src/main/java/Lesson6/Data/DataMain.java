@@ -8,5 +8,6 @@ public class DataMain {
         Data data = new Data();
         System.out.println(data.createFile());
         System.out.println(data.writeToFile());
+        System.out.println(data.readFromFile());
     }
 }
