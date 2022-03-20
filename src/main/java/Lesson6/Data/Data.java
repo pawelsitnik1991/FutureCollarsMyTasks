@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Data {
 
@@ -25,7 +27,23 @@ public class Data {
         return Files.readString(Paths.get(path));
     }
 
+    public List readSecondsLineFromFile() throws IOException {
+        List listOfReadSecondLine = new ArrayList<>();
+        for (int i = 0; i < readHowManyLineInFiles(); i++) {
+            if (i%2==1) {
+                String test = Files.readAllLines(Paths.get(path)).get(i);
+                listOfReadSecondLine.add(test);
+            }
+        }
+        return listOfReadSecondLine;
+    }
+
     public String getText() {
         return text;
     }
+
+    private int readHowManyLineInFiles() throws IOException {
+        return Files.readAllLines(Paths.get(path)).size();
+    }
+
 }
