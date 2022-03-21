@@ -9,27 +9,25 @@ public class Text {
     }
 
     public void mainTextComparison() {
-        if (!isCharactersInTheText()) {
+        if (!isTextEmpty()) {
             System.out.println(isPalindrome());
             System.out.println(textLenght());
         }
     }
 
     public boolean isPalindrome() {
-        String palindrome = (stringBuilder(text).reverse().toString());
+        StringBuilder stringBuilder = new StringBuilder(text);
+        String palindrome = (stringBuilder.reverse().toString());
         return palindrome.equals(text);
     }
 
     public int textLenght() {
-        return stringBuilder(text).length();
+        return text.length();
     }
 
-    public boolean isCharactersInTheText() {
-        return stringBuilder(text).isEmpty();
-    }
-
-    private StringBuilder stringBuilder(String text) {
-        return new StringBuilder(text);
+    public boolean isTextEmpty() {
+        StringBuilder stringBuilder = new StringBuilder(text);
+        return stringBuilder.isEmpty();
     }
 
 

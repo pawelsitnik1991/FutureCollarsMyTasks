@@ -8,13 +8,13 @@ public class TextTest {
     @Test
     public void isEmptyString() {
         Text text = new Text("");
-        Assert.assertTrue(text.isCharactersInTheText());
+        Assert.assertTrue(text.isTextEmpty());
     }
 
     @Test
     public void isNotEmptyString() {
         Text text = new Text("kajak");
-        Assert.assertFalse(text.isCharactersInTheText());
+        Assert.assertFalse(text.isTextEmpty());
     }
 
     @Test
