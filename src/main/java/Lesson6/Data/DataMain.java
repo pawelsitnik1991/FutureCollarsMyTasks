@@ -9,6 +9,5 @@ public class DataMain {
         System.out.println(data.createFile());
         System.out.println(data.writeToFile());
         System.out.println(data.readFromFile());
-        System.out.println(data.readSecondsLineFromFile());
     }
 }
