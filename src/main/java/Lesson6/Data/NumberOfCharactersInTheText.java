@@ -8,7 +8,7 @@ public class NumberOfCharactersInTheText extends Data {
 
     public int readTheNumberOfCharactersInTheText() throws IOException {
         Reader file = new FileReader(getPath());
-        char[] chars = new char[1000];
+        char[] chars = new char[readFromFile().length()];
         return file.read(chars);
     }
 }
