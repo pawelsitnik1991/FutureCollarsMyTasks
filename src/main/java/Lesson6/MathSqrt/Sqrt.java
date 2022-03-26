@@ -8,8 +8,10 @@ public class Sqrt {
         this.number = number;
     }
 
-
-    public double sqrtMath() throws IllegalArgumentException {
+    public double sqrtMath()  {
+        if(number<0) {
+            throw new IllegalArgumentException("You entered a negative number");
+        }
         return Math.sqrt(number);
     }
 }
