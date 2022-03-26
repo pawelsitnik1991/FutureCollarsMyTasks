@@ -20,4 +20,12 @@ public class Data {
         Files.writeString(Paths.get(path), text);
         return Files.isWritable(Paths.get(path));
     }
+
+    public String readFromFile() throws IOException {
+        return Files.readString(Paths.get(path));
+    }
+
+    public String getText() {
+        return text;
+    }
 }
