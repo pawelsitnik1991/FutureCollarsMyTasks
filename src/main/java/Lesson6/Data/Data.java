@@ -28,4 +28,8 @@ public class Data {
     public String getText() {
         return text;
     }
+
+    public String getPath() {
+        return path;
+    }
 }
