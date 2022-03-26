@@ -30,7 +30,8 @@ public class Data {
     public List readSecondsLineFromFile() throws IOException {
         List listOfReadSecondLine = new ArrayList<>();
         List <String> readAllLines=Files.readAllLines(Paths.get(path));
-        for (int i = 0; i < readHowManyLineInFiles(); i++) {
+        int lineInFile = readHowManyLineInFiles();
+        for (int i = 0; i < lineInFile; i++) {
             if (i%2==1) {
                 listOfReadSecondLine.add(readAllLines.get(i));
             }
