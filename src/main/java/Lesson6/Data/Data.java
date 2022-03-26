@@ -29,10 +29,10 @@ public class Data {
 
     public List readSecondsLineFromFile() throws IOException {
         List listOfReadSecondLine = new ArrayList<>();
+        List <String> readAllLines=Files.readAllLines(Paths.get(path));
         for (int i = 0; i < readHowManyLineInFiles(); i++) {
             if (i%2==1) {
-                String test = Files.readAllLines(Paths.get(path)).get(i);
-                listOfReadSecondLine.add(test);
+                listOfReadSecondLine.add(readAllLines.get(i));
             }
         }
         return listOfReadSecondLine;
