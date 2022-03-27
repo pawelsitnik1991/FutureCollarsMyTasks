@@ -9,8 +9,5 @@ public class DataMain {
         System.out.println(data.createFile());
         System.out.println(data.writeToFile());
         System.out.println(data.readFromFile());
-
-        NumberOfCharactersInTheText numberOFCaractersInTheText = new NumberOfCharactersInTheText();
-        System.out.println(numberOFCaractersInTheText.readTheNumberOfCharactersInTheText());
     }
 }
