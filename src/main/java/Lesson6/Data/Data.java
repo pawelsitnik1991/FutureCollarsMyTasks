@@ -42,6 +42,10 @@ public class Data {
         return text;
     }
 
+    public String getPath() {
+        return path;
+    }
+
     private int readHowManyLineInFiles() throws IOException {
         return Files.readAllLines(Paths.get(path)).size();
     }
